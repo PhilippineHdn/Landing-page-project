@@ -87,8 +87,9 @@
 
 #myLinks1, #myLinks2, #myLinks3 {
   position: fixed;
-    background-color: #ece9e5;
-    width: 100%;
+  background-color: #ece9e5;
+  width: 100%;
+  z-index: 1;
 }
 
 .topnav a {
