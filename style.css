@@ -71,8 +71,6 @@
     .prev, .next {font-size: 11px}
   }
 
- /* FIRST PROJECT --------------------------------------- */
-
 /* Hamburger menu */
 .topnav {
   display: none;
@@ -117,7 +115,9 @@
   height: 50px;
 }
 
-/* Hamburger menu */
+/* End Hamburger menu */
+
+/* FIRST PROJECT --------------------------------------- */
 
 .firstHeader {
     background-color:  #ece9e5;
@@ -249,6 +249,57 @@
   text-align: left;
 }
 
+/* INTRODUCTION FIRST PROJECT -------------------------- */
+
+
+.firsintroductionmaindiv {
+  display: flex;
+  gap : 15px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.firstintroductionpicture {
+  width: 500px;
+  display: block;
+  border-radius: 10px;  
+}
+
+.firstintroductiontitle {
+  font-weight: bold;
+  margin: 20px 0;
+  line-height: 40px;
+}
+
+.firstintroductionsubtitle {
+  margin-bottom: 10px;
+}
+
+.firstintroductiontexts {
+  width: 45%;
+}
+
+/* SECOND INTRODUCTION */
+
+.secondintroductionpicture {
+  height: 100%;
+}
+
+/* THIRD INTRODUCTION */
+
+.thirdintroductionpicture {
+  height: 100%;
+}
+
+.thirdintroductionmaindiv {
+  justify-content: flex-start;
+  display: flex;  
+  align-items: center;
+  gap: 150px;
+  padding-top: 0;
+}
+
 @media only screen and (max-width: 600px) {
   .mainsentence, .secondtitle, .thirdtitle {
     font-size: 20px;
@@ -264,4 +315,48 @@
   .firstbackground, .pictureandtitle, .thirdimage {
     height: calc(74vh);
   }
+
+/* FIRST INTRODUCTION */
+  .firsintroductionmaindiv {
+    flex-direction: column;
+    gap: 0;
+    margin: auto;
+    padding : 0 10px;
+  }
+  .firstintroductionpicture {
+    width: 90%;
+  }
+  .firstintroductiontexts {
+    width: 90%;
+    font-size: 80%;
+  }
+
+  /* SECOND INTRODUCTION */
+
+  .secondintroductionpicture {
+    height: 50%;
+  }
+
+  .secondintroductionmaindiv {
+    justify-content: flex-end;
+  }
+
+  /* THIRD INTRODUCTION */
+
+  .thirdintroductionpicture {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+.thirdintroductionmaindiv {
+  gap: 0px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding : 0 10px;
+}
 }
