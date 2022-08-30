@@ -360,3 +360,266 @@
   padding : 0 10px;
 }
 }
+
+/* FIRST CONTACT FORM */
+
+.firstcontactform {
+  height: 80vh;
+  display: flex;
+}
+
+.firstcontactleft {
+  width: 50%;
+  background-color: #ece9e5;
+  display: flex;
+}
+
+.iconfirst {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.contactdetails {
+  width: 80%;
+  margin: auto;
+  height: 80%;
+}
+
+.firstcontactright {
+  width: 50%;
+  background: rgb(238,174,202);
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.firsttitleandform {
+  margin: auto;
+  width: 80%;
+  height: 80%;
+}
+
+.firstformtitle {
+  color: white;
+}
+
+.name1, .email1, .message1 {
+  border: none;
+  border-bottom: 2px solid white;
+  background-color:transparent;
+  color: white;
+  width: 100%;
+  font-size: 25px;;
+}
+
+.name1::placeholder, .email1::placeholder, .message1::placeholder {
+  color: white;
+  opacity: 1; 
+} 
+
+.firstcontactbutton {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  width: 200px;
+  border-radius: 3px;
+  font-size: 25px;
+  color: #eeaeca;
+}
+
+/* SECOND CONTACT FORM */
+
+.secondcontactform {
+  height: 80vh;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.secondtitlesform {
+  width: 100%;
+  text-align: center;
+}
+
+.secondformtoflex {
+  display: flex;
+}
+
+.secondformleft {
+  width : 40%
+}
+
+.secondformdatas {
+  margin: auto;
+  width: 80%;
+}
+
+.secondformright {
+  width: 60%;
+}
+
+.secondform {
+  margin: auto;
+  width: 80%;
+}
+
+.name2, .email2, .message2 {
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+}
+
+.secondcontactbutton {
+  width: 50%;
+  padding: 5px 0;
+  display: block;
+  margin: auto;
+  border-radius: 3px;
+  background-color: white;
+}
+
+/* THIRD CONTACT FORM */
+
+.thirdcontactform {
+  height: 80vh;
+  background-color: #f09173;
+}
+
+.thirdcontacttitle {
+  margin: auto;
+  width: 35%;
+  text-align: center;
+}
+
+.thirddatas {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.thirddata {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.vl {
+  border-left: 3px solid black;
+  height: 100px;
+}
+
+.icon3 {
+  display: block;
+  margin: auto;
+}
+
+.thirdinfos {
+  text-align: center;
+  margin: auto ;
+  display: block;
+}
+
+.thirdcontacttext {
+  margin: auto;
+  width: 50%;
+}
+
+.thirdcontacttext {
+  margin: auto;
+  text-align: center;
+}
+
+.thirdform {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+.thirdcontactmedia {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.name3, .email3, .message3 {
+  width: 100%;
+  border: none;
+  background-color: #ffebe1;
+}
+
+.thirdcontactbutton {
+  padding: 0px 15px;
+  border: none;
+  background-color: #ffebe1;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  /* FIRST CONTACT FORM */
+  .firstcontactform {
+    flex-direction: column;
+    height: 160vh;
+  }
+
+  .firstcontactleft, .firstcontactright {
+    width: 100%;
+    height: 100%; 
+  }
+
+  /* SECOND CONTACT FORM */
+
+  .secondcontactform {
+    height: 160vh;
+  }
+
+  .secondformtoflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .secondformdatas {
+    text-align: center;
+    width: 100%;
+  }
+
+  .secondformright, .secondformleft {
+    width: 100%;
+  }
+
+  /* THIRD CONTACT FORM */
+
+  .thirdcontactform {
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .thirddatas {
+    flex-direction: column;
+  }
+
+  .thirddata {
+    width: 100%;
+  }
+
+  .vl {
+    display: none;
+  }
+
+  .thirdform {
+    width: 70%;
+  }
+
+}
